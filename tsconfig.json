@@ -1,0 +1,17 @@
+{
+  "files": [],
+  "references": [
+    { "path": "./packages/core" },
+    { "path": "./packages/db" },
+    { "path": "./packages/chain" },
+    { "path": "./packages/data" },
+    { "path": "./packages/brain" },
+    { "path": "./packages/risk" },
+    { "path": "./packages/strategies" },
+    { "path": "./packages/execution" },
+    { "path": "./packages/portfolio" },
+    { "path": "./packages/keeper" },
+    { "path": "./packages/dashboard" },
+    { "path": "./apps/agent" }
+  ]
+}

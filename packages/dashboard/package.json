@@ -1,0 +1,11 @@
+{
+  "name": "@4gent/dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "scripts": { "build": "tsc --build" },
+  "dependencies": { "@4gent/core": "workspace:*", "@4gent/db": "workspace:*", "@4gent/portfolio": "workspace:*", "hono": "^4.6.9", "@hono/node-server": "^1.13.7" }
+}

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+!.env.example
+*.db
+*.db-shm
+*.db-wal
+data/
+logs/
+.LIVE_CONFIRMED
+.KILL_SWITCH
+coverage/
+.DS_Store

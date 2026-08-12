@@ -1,0 +1,11 @@
+{
+  "name": "@4gent/portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "default": "./dist/index.js" } },
+  "scripts": { "build": "tsc --build" },
+  "dependencies": { "@4gent/core": "workspace:*", "@4gent/db": "workspace:*", "@4gent/chain": "workspace:*", "@4gent/data": "workspace:*", "viem": "^2.21.40" }
+}
