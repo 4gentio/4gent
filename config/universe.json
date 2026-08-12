@@ -1,0 +1,111 @@
+{
+  "quote": {
+    "symbol": "USDT",
+    "assetClass": "quote",
+    "address": "0x55d398326f99059fF775485246999027B3197955",
+    "decimals": 18,
+    "enabled": true
+  },
+  "assets": [
+    {
+      "symbol": "bTSLA",
+      "assetClass": "bstock",
+      "address": "0x5F1D8B4D9dF7E1B7Dd2c62E1e7B0dA0d6a6C4E11",
+      "decimals": 18,
+      "underlying": "TSLA",
+      "navRatio": 1,
+      "sector": "auto-ev",
+      "enabled": true,
+      "pool": {
+        "address": "0x2b1a0dCe7dF9C1B0dF2a9E62dC0d2C4f6b8A9E31",
+        "version": "v3",
+        "feeTier": 500,
+        "token0": "0x5F1D8B4D9dF7E1B7Dd2c62E1e7B0dA0d6a6C4E11",
+        "token1": "0x55d398326f99059fF775485246999027B3197955",
+        "token0Decimals": 18,
+        "token1Decimals": 18,
+        "assetIsToken0": true
+      }
+    },
+    {
+      "symbol": "bNVDA",
+      "assetClass": "bstock",
+      "address": "0x9aC1e2B8f0D4a3C6E5b7D8f9A0b1C2d3E4f5A6b7",
+      "decimals": 18,
+      "underlying": "NVDA",
+      "navRatio": 1,
+      "sector": "semis",
+      "enabled": true,
+      "pool": {
+        "address": "0x7Ee9C1d0B3a2F5e8D7c6B5a4938271605F4e3D2c",
+        "version": "v3",
+        "feeTier": 500,
+        "token0": "0x9aC1e2B8f0D4a3C6E5b7D8f9A0b1C2d3E4f5A6b7",
+        "token1": "0x55d398326f99059fF775485246999027B3197955",
+        "token0Decimals": 18,
+        "token1Decimals": 18,
+        "assetIsToken0": true
+      }
+    },
+    {
+      "symbol": "bAAPL",
+      "assetClass": "bstock",
+      "address": "0x3Bd8F0a1C2e4D6b8A0c2E4f6B8d0A2c4E6f8B0d2",
+      "decimals": 18,
+      "underlying": "AAPL",
+      "navRatio": 1,
+      "sector": "big-tech",
+      "enabled": true,
+      "pool": {
+        "address": "0x4Cd9E1b2A3f5C7d9B1e3F5a7C9d1B3e5F7a9C1d3",
+        "version": "v3",
+        "feeTier": 500,
+        "token0": "0x3Bd8F0a1C2e4D6b8A0c2E4f6B8d0A2c4E6f8B0d2",
+        "token1": "0x55d398326f99059fF775485246999027B3197955",
+        "token0Decimals": 18,
+        "token1Decimals": 18,
+        "assetIsToken0": true
+      }
+    },
+    {
+      "symbol": "bMSFT",
+      "assetClass": "bstock",
+      "address": "0x6Fe1A2b3C4d5E6f7A8b9C0d1E2f3A4b5C6d7E8f9",
+      "decimals": 18,
+      "underlying": "MSFT",
+      "navRatio": 1,
+      "sector": "big-tech",
+      "enabled": true,
+      "pool": {
+        "address": "0x8Af2B3c4D5e6F7a8B9c0D1e2F3a4B5c6D7e8F9a0",
+        "version": "v3",
+        "feeTier": 500,
+        "token0": "0x6Fe1A2b3C4d5E6f7A8b9C0d1E2f3A4b5C6d7E8f9",
+        "token1": "0x55d398326f99059fF775485246999027B3197955",
+        "token0Decimals": 18,
+        "token1Decimals": 18,
+        "assetIsToken0": true
+      }
+    },
+    {
+      "symbol": "bCOIN",
+      "assetClass": "bstock",
+      "address": "0x1Ac3D4e5F6a7B8c9D0e1F2a3B4c5D6e7F8a9B0c1",
+      "decimals": 18,
+      "underlying": "COIN",
+      "navRatio": 1,
+      "sector": "crypto-adjacent",
+      "enabled": true,
+      "pool": {
+        "address": "0x5Bd4E6f7A8b9C0d1E2f3A4b5C6d7E8f9A0b1C2d3",
+        "version": "v3",
+        "feeTier": 2500,
+        "token0": "0x1Ac3D4e5F6a7B8c9D0e1F2a3B4c5D6e7F8a9B0c1",
+        "token1": "0x55d398326f99059fF775485246999027B3197955",
+        "token0Decimals": 18,
+        "token1Decimals": 18,
+        "assetIsToken0": true
+      }
+    }
+  ]
+}
