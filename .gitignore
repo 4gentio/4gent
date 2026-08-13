@@ -7,8 +7,8 @@ dist/
 *.db
 *.db-shm
 *.db-wal
-data/
-logs/
+/data/
+/logs/
 .LIVE_CONFIRMED
 .KILL_SWITCH
 coverage/
