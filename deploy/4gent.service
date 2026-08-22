@@ -1,0 +1,51 @@
+# systemd unit for 4gent.
+#
+#   sudo cp deploy/4gent.service /etc/systemd/system/
+#   sudo systemctl daemon-reload
+#   sudo systemctl enable --now 4gent
+#   journalctl -u 4gent -f
+
+[Unit]
+Description=4gent autonomous trading agent
+Documentation=https://github.com/4gentio/4gent
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=4gent
+Group=4gent
+WorkingDirectory=/opt/4gent
+EnvironmentFile=/opt/4gent/.env
+ExecStart=/usr/bin/node --enable-source-maps /opt/4gent/apps/agent/dist/main.js
+
+# Graceful shutdown: the agent drains in-flight transactions, flushes open
+# candle buckets and closes the database before exiting. Give it room.
+KillSignal=SIGTERM
+TimeoutStopSec=180
+Restart=on-failure
+RestartSec=15
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+# The wallet key lives in this process. Reduce what a compromise reaches.
+NoNewPrivileges=true
+PrivateTmp=true
+PrivateDevices=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+RestrictNamespaces=true
+LockPersonality=true
+MemoryDenyWriteExecute=false
+ReadWritePaths=/opt/4gent/data /opt/4gent/logs
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=4gent
+
+[Install]
+WantedBy=multi-user.target
